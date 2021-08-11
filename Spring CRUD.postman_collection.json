@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "2d947ddb-e804-4053-9103-f266805d97e9",
+		"name": "Spring CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/unit?department_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"unit"
+					],
+					"query": [
+						{
+							"key": "department_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/employee?employee_id=2&employee_name=John&department_id=1&unit_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "2"
+						},
+						{
+							"key": "employee_name",
+							"value": "John"
+						},
+						{
+							"key": "department_id",
+							"value": "1"
+						},
+						{
+							"key": "unit_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/employee?employee_id=2&employee_name=Johno&department_id=1&unit_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "2"
+						},
+						{
+							"key": "employee_name",
+							"value": "Johno"
+						},
+						{
+							"key": "department_id",
+							"value": "1"
+						},
+						{
+							"key": "unit_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/technicalProject/service/employee?employee_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"technicalProject",
+						"service",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
